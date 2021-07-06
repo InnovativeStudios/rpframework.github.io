@@ -1,0 +1,49 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+$rpf-bg-light: #ddd;
+$rpf-bg-dark: #000;
+
+$rpf-bg-navbar: #151515;
+$rpf-bg-footer: #151515;
+
+$rpf-bg-header-light: #fff;
+$rpf-bg-header-dark: #000;
+
+* {
+	border: 0 !important;
+	border-radius: 0 !important;
+}
+
+body {
+	background-color: $rpf-bg-dark;
+
+	#rpf-page-header {
+		background-color: $rpf-bg-header-dark;
+	}
+
+	.rpf-bg-navbar {
+		background-color: $rpf-bg-navbar;
+	}
+	
+	.rpf-bg-footer {
+		background-color: $rpf-bg-footer;
+	}
+}
+
+body {
+	&.dark-theme {
+		background-color: $rpf-bg-light;
+
+		#rpf-page-header {
+			background-color: $rpf-bg-header-light;
+		}
+
+		.rpf-bg-navbar {
+			background-color: $rpf-bg-navbar;
+		}
+		
+		.rpf-bg-footer {
+			background-color: $rpf-bg-footer;
+		}
+	}
+}
